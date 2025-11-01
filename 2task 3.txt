@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    
+    cout << "3 eded daxil edin: ";
+    cin >> a >> b >> c;
+
+    int enBoyuk = a;
+
+    if (b > enBoyuk) {
+        enBoyuk = b;
+    }
+    if (c > enBoyuk) {
+        enBoyuk = c;
+    }
+
+    cout << "En boyuk eded: " << enBoyuk;
+
+    return 0;
+}

@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int bal;
+    cout << "Telebenin balini daxil edin: ";
+    cin >> bal;
+
+    if (bal >= 0 && bal <= 50) {
+        cout << "Qiymet: F";
+    }
+    else if (bal >= 51 && bal <= 60) {
+        cout << "Qiymet: E";
+    }
+    else if (bal >= 61 && bal <= 70) {
+        cout << "Qiymet: D";
+    }
+    else if (bal >= 71 && bal <= 80) {
+        cout << "Qiymet: C";
+    }
+    else if (bal >= 81 && bal <= 90) {
+        cout << "Qiymet: B";
+    }
+    else if (bal >= 91 && bal <= 100) {
+        cout << "Qiymet: A";
+    }
+    else {
+        cout << "Duzgun bal daxil edin! (0-100)";
+    }
+
+    return 0;
+}
