@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double r;
+    const double pi = 3;
+
+    cout << "Dairenin radiusunu daxil edin: ";
+    cin >> r;
+
+    double sahe = pi * r * r;
+    double cevre = 2 * pi * r;
+
+    cout << "Dairenin sahesi: " << sahe << endl;
+    cout << "Dairenin cevresi: " << cevre << endl;
+
+    return 0;
+}
