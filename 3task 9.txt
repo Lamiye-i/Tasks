@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, i, say = 0;
+    cin >> n;
+
+    if(n <= 1) {
+        cout << "Sade deyil";
+        return 0;
+    }
+
+    for(i = 2; i <= n/2; i++) {
+        if(n % i == 0) {
+            say++;
+            break;
+        }
+    }
+
+    if(say == 0) cout << "Sadedir";
+    else cout << "Sade deyil";
+
+    return 0;
+}

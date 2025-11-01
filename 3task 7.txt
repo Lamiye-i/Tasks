@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, sum = 0;
+
+    cout << "Ededleri daxil edin (dayanmaq ucun 0 daxil edin): ";
+
+    while(true) {
+        cin >> n;
+        if(n == 0)
+            break;      // 0 daxil olunanda dövr dayanır
+        sum = sum + n;  // daxil olunan ədədləri topla
+    }
+
+    cout << "Ededlerin cemi: " << sum;
+    return 0;
+}

@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, temp, reverse = 0;
+    cin >> n;
+
+    temp = n;
+    while(temp != 0) {
+        reverse = reverse * 10 + temp % 10;
+        temp /= 10;
+    }
+
+    cout << "Tersi: " << reverse << endl;
+
+    if(n == reverse) cout << "Palindrome-dir";
+    else cout << "Palindrome deyil";
+
+    return 0;
+}

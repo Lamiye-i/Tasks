@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, sum = 0;
+    
+    cout << "Ededi daxil edin: ";
+    cin >> n;
+
+    while(n != 0) {
+        sum = sum + (n % 10); // son reqemi əlavə et
+        n = n / 10;           // son reqemi sil
+    }
+
+    cout << "Reqemlerin cemi: " << sum;
+    return 0;
+}
