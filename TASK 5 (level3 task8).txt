@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+void reverseNumber(int eded) {
+    int ters = 0;
+    int a = abs(eded);
+    while (a > 0) {
+        ters = ters * 10 + a % 10;
+        a /= 10;
+    }
+    if (eded < 0) ters = -ters;
+    cout << eded << " ədədinin tərsi: " << ters << endl;
+}
+
+int main() {
+    int eded;
+    cout << "Ədədi daxil edin: ";
+    cin >> eded;
+    reverseNumber(eded);
+    return 0;
+}

@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+void countDigits(int eded) {
+    eded = abs(eded);
+    int say = 0;
+    if (eded == 0) {
+        cout << "Rəqəmlərin sayı: 1" << endl;
+        return;
+    }
+    while (eded > 0) {
+        eded /= 10;
+        say++;
+    }
+    cout << "Rəqəmlərin sayı: " << say << endl;
+}
+
+int main() {
+    int eded;
+    cout << "Ədədi daxil edin: ";
+    cin >> eded;
+    countDigits(eded);
+    return 0;
+}
+
+
+
+
+

@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+void findBigger(int eded1, int eded2) {
+    if (eded1 > eded2)
+        cout << eded1 << " böyükdür." << endl;
+    else if (eded2 > eded1)
+        cout << eded2 << " böyükdür." << endl;
+    else
+        cout << "Hər iki ədəd bərabərdir." << endl;
+}
+
+int main() {
+    int a, b;
+    cout << "Birinci ədədi daxil edin: ";
+    cin >> a;
+    cout << "İkinci ədədi daxil edin: ";
+    cin >> b;
+
+    findBigger(a, b);
+    return 0;
+}

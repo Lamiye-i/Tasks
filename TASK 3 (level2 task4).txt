@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+void checkEvenOdd(int eded) {
+    if (eded % 2 == 0)
+        cout << eded << " cütdür." << endl;
+    else
+        cout << eded << " təkdir." << endl;
+}
+
+int main() {
+    int eded;
+    cout << "Ədədi daxil edin: ";
+    cin >> eded;
+    checkEvenOdd(eded);
+    return 0;
+}
+
+
+
+
+

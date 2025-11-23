@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+void averageOfThree(int a, int b, int c) {
+    double ortalama = (a + b + c) / 3.0;
+    cout << "Üç ədədin ortalaması: " << ortalama << endl;
+}
+
+int main() {
+    int a, b, c;
+    cout << "Birinci ədədi daxil edin: ";
+    cin >> a;
+    cout << "İkinci ədədi daxil edin: ";
+    cin >> b;
+    cout << "Üçüncü ədədi daxil edin: ";
+    cin >> c;
+
+    averageOfThree(a, b, c);
+    return 0;
+}

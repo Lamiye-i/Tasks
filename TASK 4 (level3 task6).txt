@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+void sumNumbers(int eded) {
+    int cemi = 0;
+    for (int i = 1; i <= eded; i++) {
+        cemi += i;
+    }
+    cout << "1-dən " << eded << "-ə qədər ədədlərin cəmi: " << cemi << endl;
+}
+
+int main() {
+    int eded;
+    cout << "Ədədi daxil edin: ";
+    cin >> eded;
+    sumNumbers(eded);
+    return 0;
+}

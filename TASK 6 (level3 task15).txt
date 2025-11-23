@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+void sumOfNumbers(int n) {
+    if (n <= 0) {
+        cout << "Ədəd sayı düzgün deyil." << endl;
+        return;
+    }
+
+    int eded;
+    int cem = 0;
+
+    for (int i = 1; i <= n; i++) {
+        cout << i << "-ci ədədi daxil edin: ";
+        cin >> eded;
+        cem += eded;
+    }
+
+    cout << "Daxil edilən ədədlərin cəmi: " << cem << endl;
+}
+
+int main() {
+    int n;
+    cout << "Neçə ədəd daxil edəcəksiniz? ";
+    cin >> n;
+    sumOfNumbers(n);
+    return 0;
+}

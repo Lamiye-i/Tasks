@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+void squareProperties(int teref) {
+    int sahe = teref * teref;
+    int perimetr = 4 * teref;
+    cout << "Kvadratin sahesi: " << sahe << endl;
+    cout << "Kvadratin perimetri: " << perimetr << endl;
+}
+
+int main() {
+    int teref;
+    cout << "Kvadratin terefini daxil edin: ";
+    cin >> teref;
+    squareProperties(teref);
+    return 0;
+}
+
+
+
+
+
+
